@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color:gray;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 500px) {
+    body {
+      font-size: 14px;
+    }
+}
+
+a{
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+#logo a:hover,#link a:hover{
+    background-color: white;
+    color: rgb(97, 97, 97);
+}
+
+header h1 a:hover{
+    background-color: rgb(108, 206, 206);
+    color: white;
+}
+
+#link a{
+    padding: 10px 10px;
+    margin:5px;
+}
+
+#link{
+    position: absolute;
+    top: 30px;
+    right:20px;
+}
+
+header{
+    background-image: url(images/cover1.jpg);
+    background-size: cover;
+    height: 600px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color:rgb(108, 206, 206);
+}
+
+header::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.3);	
+}
+
+header nav{
+    font-size: 1em;
+    text-transform: uppercase;
+    color: white;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#logo{
+    position: absolute;
+    top: 20px;
+    left:10px;
+ 
+    font-style:normal;
+    font-size: 2em;
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    
+}
+
+#logo img{
+    position: relative;
+
+    width:50px;
+    height:50px;
+
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+#logo a{
+    position:absolute;
+    top:40px;
+
+    border-radius: 0;
+    font-size:0.75em;
+    padding: 7px 7px;
+    
+    margin: 10px;
+    margin-left: 0;
+}
+
+h1{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1 strong{
+    color: white;
+    font-size: 2.5em;
+    z-index: 1;
+}
+
+header h1 a{
+    padding: 10px;
+    border:3px solid rgb(108, 206, 206);
+    border-radius: 80px;
+    font-size: 1em;
+    z-index: 1;
+}
+
+@media (max-width: 500px){
+    header{
+        height: 300px;
+    }
+
+    h1 strong{
+        font-size: 1.75em;
+    }
+
+    #logo{
+        font-size: 1em;
+    }
+    
+}
+
+section{
+    font-family: 'Lato',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px 40px;
+    margin-bottom: 140px;
+}
+
+#main h1{
+    font-size: 2.8em;
+    color: black;
+    font-family: 'Open Sans';
+    text-align: center;
+    margin:15px 0px;
+    text-transform: capitalize;
+}
+
+@media (max-width:500px){
+    section {
+        margin: 40px 15px;
+    }
+
+    #main h1{
+        font-size: 2em;
+    }
+}
+
+#details{
+    display: flex;
+	justify-content: space-around;
+
+}
+
+@media (max-width: 500px) {
+    #details {
+      flex-direction: column;
+    }
+}
+
+#details div{
+	display: flex;
+	flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 15px;
+}
+
+#details div img{
+    height: 100%;
+    width: 70%;
+}
+#details h1{
+    text-transform: capitalize;
+    color: rgb(68, 160, 160);
+    font-size: 2.5em;
+}
+
+#details p{
+    font-size: 1.25em;
+}
+
+footer{
+    background-color: grey;
+    padding:25px;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img{
+    width: 45px;
+    height: 45px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+footer p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3{
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
